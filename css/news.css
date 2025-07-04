@@ -1,0 +1,86 @@
+/* ==============================
+CSS Trang Tin Tức - news.css
+============================== */
+
+/* Tái sử dụng .page-hero-section từ services.css */
+
+.news-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+.news-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.news-card:hover .news-img {
+    transform: scale(1.05);
+}
+.news-body {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.news-category {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.news-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+.news-title a {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: color 0.3s ease;
+}
+.news-title a:hover {
+    color: var(--primary-color);
+}
+.news-excerpt {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+.news-card .btn-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: auto;
+    align-self: flex-start;
+}
+.news-card .btn-link i {
+    transition: transform 0.3s ease;
+}
+.news-card .btn-link:hover i {
+    transform: translateX(5px);
+}
+
+.pagination .page-link {
+    color: var(--primary-color);
+}
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+}

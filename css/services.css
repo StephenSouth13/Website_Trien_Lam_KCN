@@ -1,0 +1,76 @@
+/* ==============================
+CSS Trang Dịch Vụ - services.css
+============================== */
+
+/* Tái sử dụng class hero chung cho các trang con */
+.page-hero-section {
+    position: relative;
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.page-hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.page-hero-section .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.page-hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Service Grid --- */
+.service-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: var(--primary-color);
+}
+
+.service-card i {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: block;
+    font-size: 2.5rem;
+}
+
+.service-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* --- CTA Section --- */
+.cta-section .btn-warning {
+    color: #000;
+    font-weight: 700;
+    padding: 15px 40px;
+}

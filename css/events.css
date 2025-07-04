@@ -1,0 +1,75 @@
+/* ==============================
+CSS Trang Sự Kiện - events.css
+============================== */
+
+/* Tái sử dụng .page-hero-section từ services.css */
+
+/* Upcoming Events Card */
+.event-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+.event-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.event-body {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.event-date {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    align-self: flex-start;
+}
+.event-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+.event-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+.event-card .btn {
+    margin-top: auto;
+}
+
+
+/* Past Events */
+.past-event-item {
+    text-align: center;
+}
+.past-event-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.past-event-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.past-event-item h5 {
+    font-weight: 600;
+    color: var(--dark-color);
+}

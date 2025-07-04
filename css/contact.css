@@ -1,0 +1,57 @@
+/* ==============================
+CSS Trang Liên Hệ - contact.css
+============================== */
+/* Tái sử dụng .page-hero-section từ services.css */
+
+.contact-info-block .info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+.contact-info-block .info-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 20px;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #eef4ff;
+    border-radius: 50%;
+}
+.contact-info-block .info-item h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contact-info-block .info-item p {
+    margin: 0;
+    color: #555;
+    word-break: break-word;
+}
+.qr-code {
+    max-width: 150px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact-form .form-control {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+#map-section {
+    width: 100%;
+    height: 450px;
+}
+#map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
